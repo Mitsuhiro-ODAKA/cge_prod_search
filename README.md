@@ -1,4 +1,4 @@
-# Automatic CGE Model Construction from Causal Rules and Observational Data
+# Automatic Generation of Production-Side Structure in Computable General Equilibrium Models Based on Observational Data and Background Knowledge (Reduced-Form Growth Regression Model)
 
 **観測データと背景知識に基づく応用一般均衡モデル生産サイド（縮約版成長回帰モデル）構造の自動生成**
 
