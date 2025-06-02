@@ -1,0 +1,32 @@
+countries: ["BRA", "KEN", "IND", "IDN", "ZAF", "MEX"]
+
+date_range:
+  start: "2010-01-01"
+  end: "2024-12-31"
+
+indicators:
+  NY.GDP.MKTP.CD: "GDP (current US$)"
+  NE.GDI.TOTL.ZS: "Gross capital formation (% of GDP)"
+  # NE.CON.PRVT.ZS: "Household final consumption (% of GDP)"
+  NE.EXP.GNFS.ZS: "Exports of goods and services (% of GDP)"
+  NE.IMP.GNFS.ZS: "Imports of goods and services (% of GDP)"
+  # GC.TAX.TOTL.GD.ZS: "Tax revenue (% of GDP)"
+  SL.UEM.TOTL.ZS: "Unemployment rate (%)"
+  SL.TLF.TOTL.IN: "Total labor force"
+  EN.GHG.CO2.PC.CE.AR5: "CO2 emissions per capita"
+  EG.FEC.RNEW.ZS: "Renewable energy consumption (% of total final energy consumption)"
+  # EN.ATM.PM25.MC.M3: "PM2.5 air pollution (micrograms per cubic meter)"
+  EG.USE.PCAP.KG.OE: "Energy use per capita (kg of oil equivalent)"
+
+output_csv: "data/cge_base_data.csv"
+
+causal:
+  input_csv: "data/cge_base_data.csv"
+  drop_columns: ["Country", "Year"]
+  threshold: 0.7
+  seed: 42
+  figsize: [8,6]
+  graph_file: "data/graph_file.gml"
+
+rule_extractor:
+  threshold_mode: "median"  # or "mean"

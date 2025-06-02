@@ -1,0 +1,14 @@
+source,target,weight
+GDP (current US$),Total labor force,1.0763274475125606
+GDP (current US$),CO2 emissions per capita,-1.4279418215559583
+GDP (current US$),Energy use per capita (kg of oil equivalent),1.9748834613383814
+Gross capital formation (% of GDP),CO2 emissions per capita,2.0904020431837798
+Gross capital formation (% of GDP),Energy use per capita (kg of oil equivalent),-2.1039223038557906
+Exports of goods and services (% of GDP),Unemployment rate (%),-1.1225214871068814
+Exports of goods and services (% of GDP),CO2 emissions per capita,1.5546219634929517
+Imports of goods and services (% of GDP),Exports of goods and services (% of GDP),0.8299176381722742
+Imports of goods and services (% of GDP),Total labor force,0.7046203394616254
+CO2 emissions per capita,Energy use per capita (kg of oil equivalent),0.7129279622864267
+Renewable energy consumption (% of total final energy consumption),Exports of goods and services (% of GDP),-0.8968115882472522
+Renewable energy consumption (% of total final energy consumption),CO2 emissions per capita,-0.9449892774201324
+Energy use per capita (kg of oil equivalent),Unemployment rate (%),0.7236868090335961

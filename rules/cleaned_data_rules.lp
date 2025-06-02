@@ -1,0 +1,9 @@
+total_labor_force_high :- gdp_current_us_high.
+unemployment_rate_high :- exports_of_goods_and_services_of_gdp_high.
+co2_emissions_per_capita_high :- exports_of_goods_and_services_of_gdp_high.
+exports_of_goods_and_services_of_gdp_high :- imports_of_goods_and_services_of_gdp_high.
+total_labor_force_high :- not imports_of_goods_and_services_of_gdp_high.
+energy_use_per_capita_kg_of_oil_equivalent_high :- co2_emissions_per_capita_high.
+exports_of_goods_and_services_of_gdp_high :- not renewable_energy_consumption_of_total_final_energy_consumption_high.
+co2_emissions_per_capita_high :- not renewable_energy_consumption_of_total_final_energy_consumption_high.
+unemployment_rate_high :- energy_use_per_capita_kg_of_oil_equivalent_high.
