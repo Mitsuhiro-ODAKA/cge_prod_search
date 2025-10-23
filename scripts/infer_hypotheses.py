@@ -32,13 +32,13 @@ def check_satisfiability(data_rules, background_rules, verbose=False):
             answer_sets.append(model.symbols(shown=True))
 
     if answer_sets:
-        print("✅ 充足可能：少なくとも1つのAnswer Setが存在します。")
+        print("充足可能：少なくとも1つのAnswer Setが存在します。")
         if verbose:
             for i, ans in enumerate(answer_sets):
                 print(f"Answer Set {i+1}: {[str(a) for a in ans]}")
         return True, answer_sets
     else:
-        print("❌ 非充足：Answer Setが存在しません（ルールに矛盾あり）。")
+        print("非充足：Answer Setが存在しません（ルールに矛盾あり）。")
         return False, []
         
 

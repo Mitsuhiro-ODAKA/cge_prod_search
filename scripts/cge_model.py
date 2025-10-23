@@ -111,7 +111,7 @@ def build_custom_nested_cge_model(
         if hasattr(var, "level"):
             results.append({"variable": name, "value": var.level})
         else:
-            print(f"⚠️ Skipping '{name}': not a Variable object.")
+            print(f"Skipping '{name}': not a Variable object.")
     print(pd.DataFrame(results))
     return m
 
@@ -153,18 +153,18 @@ def generate_latex_equations_with_coefficients(
         # 安全にサブセット抽出
         missing = [col for col in safe_inputs if col not in df.columns]
         if missing:
-            print(f"⚠️ Warning: Missing columns for target '{target}': {missing}")
+            print(f"Warning: Missing columns for target '{target}': {missing}")
             continue
 
         if target not in df.columns:
-            print(f"⚠️ Warning: Target column '{target}' not in DataFrame.")
+            print(f"Warning: Target column '{target}' not in DataFrame.")
             continue
 
         X = df[safe_inputs]
         y = df[target]
 
         if X.empty or y.empty:
-            print(f"⚠️ Skipping regression for {target} due to empty data.")
+            print(f"Skipping regression for {target} due to empty data.")
             continue
 
         model = LinearRegression().fit(X, y)

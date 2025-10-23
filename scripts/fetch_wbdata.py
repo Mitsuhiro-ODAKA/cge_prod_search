@@ -15,7 +15,7 @@ def fetch_worldbank_data(config_path="config.yaml"):
     end_date = datetime.datetime.strptime(config["date_range"]["end"], "%Y-%m-%d")
     data_date = (start_date, end_date)
 
-    print("🔄 Fetching data from World Bank...")
+    print("Fetching data from World Bank...")
     df = wbdata.get_dataframe(indicators, country=countries, date=data_date)
 
     df = df.reset_index()
@@ -25,6 +25,6 @@ def fetch_worldbank_data(config_path="config.yaml"):
 
     output_path = config["output_csv"]
     df.to_csv(output_path, index=False)
-    print(f"✅ Data saved to: {output_path}")
+    print(f"Data saved to: {output_path}")
 
     return df

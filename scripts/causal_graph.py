@@ -22,7 +22,7 @@ def save_edge_weights_to_csv(G, filepath="graph_edges.csv"):
 
     df = pd.DataFrame(edge_data)
     df.to_csv(filepath, index=False)
-    print(f"✅ エッジ情報を {filepath} に保存しました。")
+    print(f"エッジ情報を {filepath} に保存しました。")
 
 
 def estimate_and_plot_causal_graph(config: dict):

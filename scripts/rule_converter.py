@@ -76,6 +76,6 @@ def rule_to_asp_program(rules):
             asp_rules.append(asp_rule)
 
         except Exception as e:
-            print(f"❌ Rule parse error: '{rule}' -> {e}")
+            print(f"Rule parse error: '{rule}' -> {e}")
 
     return asp_rules
